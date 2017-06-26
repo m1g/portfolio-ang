@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="main">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Miguel
+					<small>portfolio</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+        <!-- Projects Row -->
+  <div class="row" >
+      <div class="col-md-6 portfolio-item" *ngFor="let p of projects">
+          <a href="{{p.link}}"><img class="img-responsive" src="{{p.image}}" alt=""></a>
+          <h3><a href="{{p.link}}">{{p.name}}</a></h3>
+          <p>{{p.caption}}</p>
+      </div>
+  </div>
+</div>

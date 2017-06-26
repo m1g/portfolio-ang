@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro:400,700|Ubuntu:700');
+
+/* FONTS, STYLES, & COLORS */
+body { font-family: 'Source Sans Pro', sans-serif; }
+h3 { font-family: 'Ubuntu', sans-serif; }
+h1, .navbar-brand { font-family: 'Fugaz One', cursive;}
+
+.main {
+  margin-top: 5em;
+}
+
+a {
+  text-decoration: none;
+  transition: .5s;
+  color: #777;
+}
+
+a:hover {
+  color: #FFA07A;
+  text-decoration: none;
+}
+
+.navbar-nav { margin-top: .5rem; }
+.navbar-inverse .navbar-nav > li { 
+  color: #9d9d9d;
+  transition: .5s;
+}
+li { background-color: transparent; }
+
+.nav li > a {
+  display: initial;
+  padding: 0;
+ }
+
+.navbar-nav > li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-nav > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar-inverse .navbar-nav > li:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav > li:focus,
+.navbar-inverse .navbar-nav > li:active {
+  outline-style: none;
+}
+
+li {
+  display: list-item;
+}
+
+@media only screen and (max-width: 768px) { 
+  .navbar-brand {
+    display: none;
+  }
+}
