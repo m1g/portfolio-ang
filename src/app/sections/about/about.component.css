@@ -1,6 +1,6 @@
 .bio-section {
   border: 1px solid #ccc;
-  max-width: 350px;
+  max-width: 300px;
   padding: 1em;
 }
 
@@ -12,4 +12,10 @@ footer {
 ul {
   padding-left: 0;
   list-style: none;
+}
+
+.bio {
+  font-size: 2rem;
+  font-style: italic;
+  color: #888;
 }
