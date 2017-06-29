@@ -19,3 +19,7 @@ ul {
   font-style: italic;
   color: #888;
 }
+
+.margin {
+  margin: 1.5em 0;
+}

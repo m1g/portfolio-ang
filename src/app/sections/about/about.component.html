@@ -20,8 +20,8 @@
         </div>
       </div>
       <div class="col-md-5">
-        <h1>Hello.</h1>
-        <p class="bio">I'm a web developer based in the Tampa Bay/St. Pete, Florida area - and in addition to coding, I'm a husband &amp; father, a wanna-be foodie, and a fan of all things technology and learning.</p>
+        <h1>True story.</h1>
+        <p class="bio">I'm a web based app developer based in the Tampa Bay/St. Pete, Florida area - and in addition to coding, I'm a husband &amp; father, a wanna-be foodie, and a fan of all things technology and learning.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque similique consectetur, libero, saepe dicta laudantium facilis dolorum praesentium autem, ad enim unde doloremque sint accusamus debitis voluptates ea rerum adipisci.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque similique consectetur, libero, saepe dicta laudantium facilis dolorum praesentium autem, ad enim unde doloremque sint accusamus debitis voluptates ea rerum adipisci.</p>
       </div>
@@ -29,6 +29,11 @@
   </div>
   <hr>
   <h1>Extended Stack.</h1>
+    <div class="row">
+      <div *ngFor="let i of icons" class="col-md-3 col-sm-6 margin">
+          <a href="{{i.link}}"><img class="img-responsive" src="{{i.src}}" alt="{{i.alt}}"></a>
+      </div>
+    </div>
   <!--Javascript
   Angular
   Typescript
