@@ -1,24 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService } from '../../projects.service';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
+  providers: [ProjectsService]
 })
 export class PortfolioComponent implements OnInit {
-
-  public projects: Array<Object> = [
-    { name: 'USF - My Compass', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam distinctio illo soluta sed ipsam impedit corporis architecto, et dicta odit saepe!', image: '../../assets/usf.jpg', link:'http://usfcompass.swdlab.com/usf/' },
-    { name: 'Project 2', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam distinctio illo soluta sed ipsam impedit corporis architecto, et dicta odit saepe!', image: 'http://placehold.it/700x400', link:'' },
-    { name: 'Project 3', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam distinctio illo soluta sed ipsam impedit corporis architecto, et dicta odit saepe!', image: 'http://placehold.it/700x400', link:'' },
-    { name: 'Project 4', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam distinctio illo soluta sed ipsam impedit corporis architecto, et dicta odit saepe!', image: 'http://placehold.it/700x400', link:'' },
-    { name: 'Project 5', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam distinctio illo soluta sed ipsam impedit corporis architecto, et dicta odit saepe!', image: 'http://placehold.it/700x400', link:'' },
-    { name: 'Project 6', caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam distinctio illo soluta sed ipsam impedit corporis architecto, et dicta odit saepe!', image: 'http://placehold.it/700x400', link:'' }
-  ]
-
-  constructor() { }
+  projects: {
+    name: string,
+    caption: string,
+    image: string,
+    link: string
+  }[] = []; 
+  
+  constructor(private projectsService: ProjectsService) {}
 
   ngOnInit() {
+    this.projects = this.projectsService.projects;
   }
-
 }
