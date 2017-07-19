@@ -20,6 +20,20 @@ ul {
   color: #888;
 }
 
+.intro {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+p a:link, p a:hover {
+  color: #333;
+  font-weight: bold;
+}
+
+.social { text-align: center; }
+.social li { display: inline-block; }
+.fa { padding: 0 5px; }
+
 .margin {
   margin: 1.5em 0;
 }
