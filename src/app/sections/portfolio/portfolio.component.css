@@ -1,7 +1,8 @@
 .col-md-6 > p { margin: 0 0 20px; }
-.portfolio-item img { 
+.portfolio-item img {
   opacity: .90;
   transition: opacity .5s;
+  border: 1px solid #ccc;
 }
 
 .portfolio-item img:hover {
